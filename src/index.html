@@ -1,137 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pamela Torres</title>
   <link rel="icon" type="image/jpg" href="img/logo_2.jpg" />
-  <!--Para colocar imagen de icono en la pestaña del navegador esto aparece del lado derecho del titulo-->
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilos.css">
-</head>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css">
 
+</head>
 <body>
-  <header class="header">
-    <div class="container">
-      <figure class="logo">
-        <img src="img/logo_2.jpg" height="50px" alt="Logo" />
-      </figure>
-      <p class="titulo-g">Pamela Torres</p>
-      <nav class="menu">
-        <ol>
-          <li>
-            <a class="link" href="#aboutme">Sobre Mi</a>
-            
+  <!--Header con bootstrap-->
+  <nav id="header" class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">  
+    <a class="navbar-brand" href="#">
+      <img src="./img/logo_2.jpg" alt="Pamela logo"> Pamela Torres</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
           </li>
-          <li>
-            <a class="link" href="#portafolio">Portafolio</a>
+          <li class="nav-item">
+            <a class="nav-link text-pamela" href="#">Portafolio</a>
           </li>
-          <li>
-            <a class="link" href="#contacto">Trabajemos juntos</a>
-          </li>
-        </ol>
-      </nav>
-    </div>
-  </header>
-  <section class="hero">
-    <div class="container">
-      <h1>Hola! Soy <strong>Pamela Torres</strong> <br> Desrrolladora<strong>Web</strong> con <br> pasión por
-       <strong>aprender</strong> </h1>
-      <img class="hero-image" src="img/pame_perfil.png" width="500" height="300" alt="imagen principal del sitio">
-      
-    </div>
-  </section>
-  <section id="aboutme" class="portfolio">
-    <div class="container">
-      <h2>Sobre Mi</h2>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Pamela Torres</h3>
-          <h6 class="project-course">Lic. Informatica Admisnitrativa</h6>
-          <p class="project-url"><small><strong>Puedes Verlo en: </strong>link de linkedin</small></p>
-          </p>
-          <p class="project-description">Soy una desarrolladora web profesional y apasionada por el aprendizaje constante.</p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" width="500" src="img/logo_1.jpg"
-            alt="proyecto del curso de REac Native">
-        </figure>
-      </article> 
-      </article>
-    </div>
-  </section>
-  <div class="container">
-    <h2 class="experience-title">Más sobre mi experiencia</h2>
-  </div>
-  <section id="portafolio" class="experience">
-    <div class="container">
-      <article class="event">
-        <figure class="event-imageContainer">
-          <img class="event-image" src="imagen de proyecto" width="500">
-        </figure>
-        <div class="event-details">
-          <h3 class="event-title">Nombre de Proyecto</h3>
-          <p class="event-description">Descripción del proyecto.</p>
-          <a class="event-url" href="link de github-pages" target="blanck">Ver pagina</a>
-        </div>
-      </article>
-      <article class="event">
-        <figure class="event-imageContainer">
-          <img class="event-image" src="imagen de proyecto" width="500">
-        </figure>
-        <div class="event-details">
-          <h3 class="event-title">Nombre de Proyecto</h3>
-          <p class="event-description">Descripción del proyecto.</p>
-          <a class="event-url" href="link de github-pages" target="blanck">Ver pagina</a>
-        </div>
-      </article>
-      <article class="event">
-        <figure class="event-imageContainer">
-          <img class="event-image" src="imagen de proyecto" width="500">
-        </figure>
-        <div class="event-details">
-            <h3 class="event-title">Nombre de Proyecto</h3>
-            <p class="event-description">Descripción del proyecto.</p>
-            <a class="event-url" href="link de github-pages" target="blanck">Ver pagina</a>
-        </div>
-      </article>
-      <article class="event">
-        <!--Ejemplo de como funcionaria un evento dentro de los eventos-->
-        <figure class="event-imageContainer">
-          <img class="event-image" src="imagen de proyecto" width="500">
-        </figure>
-        <div class="event-details">
-            <h3 class="event-title">Nombre de Proyecto</h3>
-            <p class="event-description">Descripción del proyecto.</p>
-            <a class="event-url" href="link de github-pages" target="blanck">Ver pagina</a>
-        </div>
-      </article>
-    </div>
-  </section>
-  <section id="contacto" class="contact">
-    <div class="container">
-      <form action="/suscripción/" class="form-email">
-        <h3 class="contact-title">¿Creamos algo juntos?</h3>
-        <input class="contact-email" type="texto" placeholder="Dejame tu email" id="email">
-        <button class="form-email button">Enviar</button>
-      </form>
-      <div class="social">
-        <a href="https://twitter.com/home" class="social-link twitter"></a>
-        <a href="" class="social-link facebook"></a>
-        <a href="https://github.com/Pamela-C-Torres-Gtz" class="social-link github"></a>
-        <a href="https://www.instagram.com" class="social-link instagram"></a>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Experiencia</a>
+              </li>
+        </ul>
       </div>
     </div>
-  </section>
-  <footer class="footer">
-    <div class="container">
-    <div>
-      <p>Desigd with &hearts; by <a href="https://twitter.com/pamelatgtz">@pamelatgtz</a></p>
-    </div>
-  </div>
-  </footer>
-</body>
+    </nav>
 
+    <section class="hero">
+        <div class="container">
+          <h1>Hola! Soy <strong>Pamela Torres</strong> <br> Desrrolladora<strong>  Web <br> </strong> con  pasión por
+           <strong>aprender</strong> </h1>
+          <img class="hero-image" src="img/pame_perfil.png" width="500" height="300" alt="imagen principal del sitio">
+          
+        </div>
+      </section>
+    
+<!--Footer-->
+  <footer id="footer" class="pb-4 pt-4">
+    <div class="container">
+     <div class="row text-center">
+      <div class="col-12 col-lg">
+        <p>Desigd &hearts;with &nbsp; &hearts; &nbsp;by &nbsp;&nbsp;Pamela Cinthya Torres Gutiérrez&nbsp;&nbsp;
+        <a href="https://twitter.com/pamelatgtz">@pamelatgtz</a></p>
+      </div>
+      <div class="col-12 col-lg">
+          <a href="https://twitter.com/pamelatgtz" class="social-link twitter"></a>
+      </div>
+     </div>
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
 </html>

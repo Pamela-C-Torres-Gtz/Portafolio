@@ -1,0 +1,77 @@
+.text-pamela {
+  
+    color: #31a8c4 !important;
+}
+
+#header {
+    color: white;
+}
+#header img {
+    width: 80px;  
+}
+
+.navbar{
+    background: rgb(14,11,56);
+    background: linear-gradient(90deg, rgba(14,11,56,1) 0%, rgba(113,84,134,1) 69%, rgba(52,16,66,1) 100%);
+    
+    box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.993);
+    border-radius: 3px;
+}
+
+.hero {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0b0b0b;
+}
+
+.container { 
+    width: 1200px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+h1 {
+    font-size: 40px; 
+    line-height: 1.5; 
+    letter-spacing: -.2px;
+    color: white; 
+    margin: 0;
+    text-shadow: 0 4px 8px 0 rgba(49,168,196,1);
+}
+
+h1 strong{
+    color: #31a8c4;
+}
+
+.hero-image{
+    border-radius: 70%;
+    margin-right: 1rem;
+    width: 200px;
+    height: 200px;
+}
+
+#footer{
+    background: rgb(14,11,56);
+    background: linear-gradient(90deg, rgba(14,11,56,1) 0%, rgba(113,84,134,1) 69%, rgba(52,16,66,1) 100%);
+    box-shadow: 6px 0  8px 0 rgba(255, 254, 254, 0.993);
+    border-radius: 3px;
+}
+
+#footer a,p {
+    color: white;
+}
+
+/*#social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+   /* border: 1px solid white; *//*esto nos sirve solo como marco de referencia para la imagen una vez que terminamos el estilo lo borramos*/
+    /*margin: 0 10px;
+   background-size: 50px 50px;
+}*/
