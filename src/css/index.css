@@ -7,23 +7,47 @@
     color: white;
 }
 #header img {
-    width: 80px;  
+    width: 85px;  
 }
 
 .navbar{
-    background: rgb(14,11,56);
-    background: linear-gradient(90deg, rgba(14,11,56,1) 0%, rgba(113,84,134,1) 69%, rgba(52,16,66,1) 100%);
-    
+    background: rgb(3,0,30);
+    background: linear-gradient(176deg, rgba(3,0,30,1) 0%, rgba(115,3,192,1) 50%, rgba(236,56,188,1) 100%);
     box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.993);
     border-radius: 3px;
+    height: 100%;
 }
+
+#main .carousel-inner img {
+    max-height: 70vh;
+    object-fit: cover;
+    filter: grayscale(70%);
+    transition: all 0.3s ease-in-out;
+}
+
+#carousel {
+    position: relative;
+}
+
+/*#carousel .overlay {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: black;
+}*/
 
 .hero {
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #0b0b0b;
+    background: rgb(1,6,9);
+    background: radial-gradient(circle, rgba(1,6,9,1) 85%, rgba(163,152,165,1) 110%);
+
+
 }
 
 .container { 
@@ -57,21 +81,35 @@ h1 strong{
 }
 
 #footer{
-    background: rgb(14,11,56);
-    background: linear-gradient(90deg, rgba(14,11,56,1) 0%, rgba(113,84,134,1) 69%, rgba(52,16,66,1) 100%);
+    background: rgb(3,0,30);
+    background: linear-gradient(354deg, rgba(3,0,30,1) 0%, rgba(115,3,192,1) 50%, rgba(236,56,188,1) 100%);
     box-shadow: 6px 0  8px 0 rgba(255, 254, 254, 0.993);
     border-radius: 3px;
+    height: 35%;
 }
 
 #footer a,p {
     color: white;
 }
 
-/*#social-link {
+
+.social-link {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
    /* border: 1px solid white; *//*esto nos sirve solo como marco de referencia para la imagen una vez que terminamos el estilo lo borramos*/
-    /*margin: 0 10px;
-   background-size: 50px 50px;
-}*/
+    margin: 0 8px;
+   background-size: 30px 30px;
+}
+
+.social-link.twitter {
+   background-image: url('../img/twitter.svg'); 
+}
+
+ .social-link.github {
+    background-image: url('../img/github.svg');
+ }
+
+ .social-link.instagram {
+    background-image: url('../img/instagram.svg');
+ }
