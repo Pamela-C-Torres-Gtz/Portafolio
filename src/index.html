@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
 
-  <body class="body">
+  <body class="body container-fluid p-0">
     <!--Header con bootstrap-->
     <nav id="header" class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
@@ -33,41 +33,80 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-pamela" href="#">Portafolio</a>
+              <a class="nav-link text-pamela" href="#portafolio">Portafolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#sobremi">Sobre mi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Experiencia</a>
+              <a class="nav-link" href="#">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!--/Header-->
+    <!--/Header-->}
 
-    <section id="sobremi" class="hero"><br/><br/>
-        <h1>Bienvenido</h1> <br/>
-      <div class="container">
+    <!--********** Home ***********--->
+    <section id="home" class="home container-fluid text-center p-0">
+      <div class="d-flex flex-column">
+        <h1>Bienvenido</h1><br/>
+      <div>
         <h2>
           Hola! Soy <strong>Pamela Torres</strong> <br />
           FrontEnd<strong> Developer <br /> </strong> con pasión por
           <strong>aprender</strong>
         </h2>
-        <!--<img class="hero-image" src="img/pame_perfil.png" width="500" height="300" alt="imagen principal del sitio" />-->
+        
+      </div><br/>
+      <button type="button" class="button container-fluid text-center">Contactame</button>
+      <div class="col-12 col-lg"><br/>
+        <a href="https://twitter.com/pamelatgtz" class="social-link twitter"></a>
+        <a href="https://github.com/Pamela-C-Torres-Gtz" class="social-link github"></a>
+        <a href="https://github.com/Pamela-C-Torres-Gtz" class="social-link linkedin"></a>
+        <a href="https://github.com/Pamela-C-Torres-Gtz" class="social-link facebook"></a>
+      </div>
+    </div>
+    </section>
+
+    <!--**********Sobre mi*******-->
+    <section id="sobremi" class="sobremi container-fluid p-0">
+        <div class="d-flex flex-column text-center">
+            <h1>Sobre Mi</h1>
+            <div>
+           <img class="sobremi-image" src="img/pame_perfil.png" width="500" height="300" alt="imagen principal del sitio" />
+          </div>
+          <div>
+            <p class="p">
+                colocar un texto relebante  de loq que se va atratar esta seccion, tener en cuenta la parte de redaccion
+            </p>
+          </div>
+        <div>
+
+        </div>
       </div>
     </section>
 
-    <!--carrusell-->
-    <main id="main">
-    <div id="carousel" class="carousel slide carousel-fade" data-ride="carusel" data-pause="false">
+    <!--*******Carrusell skills**********-->
+    <main id="main" class="main container-fluid p-0">
+    <div class="d-flex flex-column text-center">
+        <h1>Habilidades Técnicas y Blandas</h1>
+       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carusel" data-pause="false">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="d-block w-100" src="img/carrusel_1.jpg" alt="carousel-1" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Primera habilidad tecnica</h5>
+            <p>Manejo y mejoramiento</p>
+          </div>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="img/carrusel_2.jpg" alt="carrusel_2" />
@@ -121,35 +160,50 @@
           <img class="d-block w-100" src="img/Trello-Logo-1.png" alt="Trello" />
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
     </div>
+    </div>
   </main>
     <!--/carrusel-->
     
+    <!--********Portafolio**********-->
+    <section id="portafolio" class="portafolio container-fluid p-0">
+        <div class="d-flex flex-column text-center projects">
+            <div>
+              <h1>Projectos</h1>
+            </div>
+            <div class="d-sm-flex flex-row">
+                <div class="cards"></div>
+            </div>
+    </section>
+    <!--******** /Portafolio**********-->
     <!--Footer con bootstrap-->
     <footer id="footer" class="pb-3 pt-3">
+        <div class="container-fluid p-0">
       <div class="container">
         <div class="row text-center">
           <div class="col-12 col-lg">
             <p>
-              Desigd &hearts;with &nbsp; &hearts; &nbsp;by &nbsp;&nbsp;Pamela
+              Desigd &nbsp; &hearts; &nbsp;with &nbsp; &hearts; &nbsp;by &nbsp;&nbsp;Pamela
               Cinthya Torres Gutiérrez&nbsp;&nbsp;
             </p>
           </div>
-
           <div class="col-12 col-lg">
             <a href="https://twitter.com/pamelatgtz" class="social-link twitter"></a>
             <a href="https://github.com/Pamela-C-Torres-Gtz" class="social-link github"></a>
+            <a href="https://github.com/Pamela-C-Torres-Gtz" class="social-link linkedin"></a>
+            <a href="https://github.com/Pamela-C-Torres-Gtz" class="social-link facebook"></a>
           </div>
         </div>
       </div>
+    </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -162,5 +216,4 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     </body>
-
     </html>
