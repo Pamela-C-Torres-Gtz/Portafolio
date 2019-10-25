@@ -4,8 +4,8 @@
 
 
 .body {
-    /*background-color: #393939;*/
-    background-color: #34363c;
+    /*background-color: #5d5e60;*/
+    background-color: #2f2f2f;
 }
 
 .text-pamela {
@@ -21,7 +21,8 @@
 }
 
 .navbar{
-    background-color: #2f2f2f;
+    /*background-color: #2f2f2f;*/
+    background-color: #5d5e60;
     box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.993);
     border-radius: 3px;
     height: 100%;
@@ -37,7 +38,7 @@
     /*display: flex;*/
     text-align: center;
     /*justify-content: space-between;*/
-    color: #dcdcdc;
+    color: #e3e2e2;
 }
 
 h1 {
@@ -47,11 +48,11 @@ h1 {
 }
 
 h2 {
-    font-size: 40px auto; 
+    font-size: 15px auto; 
     line-height: 1.5; 
     letter-spacing: -.2px;
-    background: rgb(140,140,140);
-    background: linear-gradient(356deg, rgba(140,140,140,1) 0%, rgba(255,249,251,1) 100%);
+    background: rgb(191,193,197);
+    background: linear-gradient(356deg, rgba(191,193,197,1) 0%, rgba(255,255,255,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;   
@@ -64,17 +65,18 @@ h2 strong{
     -webkit-text-fill-color: transparent;
 }
 
-.button {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 50px;
-    width: 130px;
+.btn {
     font-size: auto; 
     font-weight: bold;
     color: #dcdcdc;
     letter-spacing: 1px;
     text-shadow:black 0.1em 0.1em 0.2em;
-   background-color: grey;
+   /* border-color: #e3e2e2;*/
+    border: 2px solid #e3e2e2 ;
+    -webkit-box-shadow: -3px 2px 17px -3px rgba(197,197,199,1);
+    -moz-box-shadow: -3px 2px 17px -3px rgba(197,197,199,1);
+    box-shadow: -3px 2px 17px -3px rgba(197,197,199,1);
+    border-radius: 12px;
 }
 
 .sobremi{
@@ -85,6 +87,7 @@ h2 strong{
     justify-content: center;
     color: #dcdcdc;
 }
+
 .sobremi-image{
     border-radius: 70%;
     margin-top: 20px;
@@ -95,7 +98,7 @@ h2 strong{
     justify-content: center;
 }
 
-.main {
+.main h1{
     color: #dcdcdc;
 }
 
@@ -106,18 +109,22 @@ h2 strong{
     transition: all 0.3s ease-in-out;
 }
 
-#carousel {
+#carouselExampleIndicators {
     position: relative;
 }
 
-#carousel .overlay {
+#carouselExampleIndicators .overlay {
     position:absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: rgba(0,0,0,0.5);
-    color: black;
+    
+}
+
+#main h2,p {
+    color:black;
 }
 
 .d-block {
@@ -126,23 +133,69 @@ h2 strong{
     align-content: center;
 }
 
-.carousel-caption h5{
-    color: black;
+.portafolio {
+    color: #dcdcdc;
+    text-align: center;
+    justify-content: center;
 }
 
-.portafolio{
+.proyect {
+   /*border: 1px solid red;*/
+   margin: 10px;
+   width: 480px;/*para pintar dos tarjetitas*/
+   /*para dar formato a las tarjetas de la sección*/
+   flex-shrink: 0;
+   border-radius: 10px;
+   overflow: hidden;
+   background: #f4fbff;
+}
+
+.proyect img {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;/*para adecuar el tamaño de la imagen dentro del contenedor*/
+  }
+
+  .proyect-details {
+    margin: 30px 50px;
+    margin-top: -50px;
+    background-color: white;
+    position: relative;/*posicion relativa nos sirve para super poner elementos encima de otros*/
+    padding: 30px;
+    text-align: center;
+}
+
+.proyect-description{
+    text-align: left;
+}
+
+.proyect-url{
+    color: #056fff;
+    border: 1px solid;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+
+}
+.contactame {
+text-align: center;
+    justify-content: center;
     color: #dcdcdc;
 }
 
 #footer{
-    background-color: #131915;
-    box-shadow: 6px 0  8px 0 rgba(255, 254, 254, 0.993);
+    background-color: #5d5e60;
+    -webkit-box-shadow: 0px -8px 18px -3px rgba(217,217,224,1);
+-moz-box-shadow: 0px -8px 18px -3px rgba(217,217,224,1);
+box-shadow: 0px -8px 18px -3px rgba(217,217,224,1);
+    /*box-shadow: 6px 0  8px 0 rgba(255, 254, 254, 0.993);*/
     border-radius: 3px;
     height: 35%;
 }
 
 #footer a,p {
-    color: white;
+    color:#e3e2e2;
+    text-shadow:black 0.1em 0.1em 0.2em;
 }
 
 
