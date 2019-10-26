@@ -51,18 +51,20 @@
     <!--/Header-->}
 
     <!--********** Home ***********--->
-    <section id="home" class="home container-fluid text-center p-0">
+    <section id="home" class="home container-fluid text-center p-0 mt-5 mb-4">
       <div class="d-flex flex-column">
-        <br/><h1>Bienvenido</h1><br/>
+        <h1>Bienvenido</h1>
       <div>
-        <h2>
+        <h2 class="mt-4">
           Hola! Soy <strong>Pamela Torres</strong> <br />
           FrontEnd<strong> Developer <br /> </strong> con pasión por
           <strong>aprender</strong>
         </h2>
       </div><br/>
       <div class="container-fluid text-center">
-        <button type="button" class="btn btn-outline-secondary btn-lg">Contactame</button>
+          <a class="link" href="#contactame">
+        <button type="button" class="btn btn-outline-secondary btn-lg">
+          Contactame</button></a>
       </div>
       <div class="col-12 col-lg"><br/>
         <a href="https://twitter.com/pamelatgtz" class="social-link twitter"></a>
@@ -74,13 +76,13 @@
     </section>
 
     <!--**********Sobre mi*******-->
-    <section id="sobremi" class="sobremi container-fluid p-0">
+    <section id="sobremi" class="sobremi container-fluid p-0 mt-5 mb-4">
         <div class="d-flex flex-column text-center">
             <h1>Sobre Mi</h1>
             <div>
-           <img class="sobremi-image" src="img/pame_perfil.png" width="500" height="300" alt="imagen principal del sitio" />
+           <img class="sobremi-image mt-4" src="img/pame_perfil.png" width="500" height="300" alt="imagen principal del sitio" />
           </div>
-          <div>
+          <div class="mt-4">
             <p class="p">
                 colocar un texto relebante  de loq que se va atratar esta seccion, tener en cuenta la parte de redaccion
             </p>
@@ -92,10 +94,10 @@
     </section>
 
     <!--*******Carrusell skills**********-->
-    <main id="main" class="main container-fluid p-0">
+    <main id="main" class="main container-fluid p-0 mt-5 mb-4">
     <div class="d-flex flex-column text-center">
         <h1>Habilidades Técnicas y Blandas</h1>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide mt-5" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -262,68 +264,66 @@
     <!--/carrusel-->
     
     <!--********Portafolio**********-->
-    <section id="portafolio" class="portafolio container-fluid p-0">
+    <section id="portafolio" class="portafolio container-fluid p-0 mt-5 mb-4">
         <div class="d-flex flex-column text-center">
             <div>
               <h1>Projectos</h1>
             </div>
-            
               <div class="row justify-content-md-center">
                 <div class="col-12 col-md-4">
-                  <article class="event">
-                    <!--Ejemplo de como funcionaria un evento dentro de los eventos-->
-                    <figure class="event-imageContainer">
-                      <img class="event-image" src="images/platzi-conf.jpg" width="500">
-                    </figure>
-                    <div class="event-details">
-                      <h3 class="event-title">Women Dev</h3>
-                      <p class="event-description">Web App de  una red social para mujeres developers donde puedan comunicarse, compartir contenido, y ayudar a difundir conocimiento.
-                          Creado con HTML5, CSS y JavaScript Firebase apoyado de Figma y  Git/Github.</p>
-                      <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="blanck">Ver platica</a>
-                      <!--El atributo target="blanck" nos sirve para que nuestro enlace se abra en una pagina nueva-->
-                    </div>
-                  </article>
+                  <div class="card proyect mt-5 mb-4">
+                          <img src="..." class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Women Dev</h3>
+                            <p class="card-text mt-3 mb-3">Web App de  una red social para mujeres developers donde puedan comunicarse, compartir contenido, y ayudar a difundir conocimiento.
+                                Creado con HTML5, CSS y JavaScript Firebase apoyado de Figma y  Git/Github.
+                                </p>
+                            <a href="https://pamela-c-torres-gtz.github.io/MEX008-social-network/src/index.html" class="btn btn-outline-secondary btn-lg mt-3 mb-2" target="blanck">Proyecto</a>
+                            <!--El atributo target="blanck" nos sirve para que nuestro enlace se abra en una pagina nueva-->
+                          </div>
+                  </div>
                 </div>
+
                 <div class="col-12 col-md-4">
-                  <article class="event">
-                    <!--Ejemplo de como funcionaria un evento dentro de los eventos-->
-                    <figure class="event-imageContainer">
-                      <img class="event-image" src="images/platzi-conf.jpg" width="500">
-                    </figure>
-                    <div class="event-details">
-                      <h3 class="event-title">MD-Link</h3>
-                      <p class="event-description">El evento más grnade sobre gente que quiere aprender más de internet.</p>
-                      <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="blanck">Ver platica</a>
-                      <!--El atributo target="blanck" nos sirve para que nuestro enlace se abra en una pagina nueva-->
+                    <div class="card proyect mt-5 mb-4">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h3 class="card-title">MD-Link</h3>
+                              <p class="card-text mt-3 mb-3">Herramienta creada en Node.js que lee y analiza archivos con extensión de formato (Markdown), que verifica los links contenidos y reporta estadísticas de validación. 
+                                  <br /><br />Creado con Node.JS, Tests Jets, ejecutable a travez de Interfaz de Línea de Comando,  apoyado de Git/Github.
+                                  </p>
+                              <a href="https://github.com/Pamela-C-Torres-Gtz/MEX008-FE-md-link" class="btn btn-outline-secondary btn-lg mt-3 mb-2" target="blanck">Proyecto</a>
+                              <!--El atributo target="blanck" nos sirve para que nuestro enlace se abra en una pagina nueva-->
+                            </div>
                     </div>
-                  </article>
-                </div>
-                <div class="col-12 col-md-4">
-                  <article class="event">
-                    <!--Ejemplo de como funcionaria un evento dentro de los eventos-->
-                    <figure class="event-imageContainer">
-                      <img class="event-image" src="images/platzi-conf.jpg" width="500">
-                    </figure>
-                    <div class="event-details">
-                      <h3 class="event-title">Pan D'Monium</h3>
-                      <p class="event-description">El evento más grnade sobre gente que quiere aprender más de internet.</p>
-                      <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="blanck">Ver platica</a>
-                      <!--El atributo target="blanck" nos sirve para que nuestro enlace se abra en una pagina nueva-->
+                  </div>
+
+                  <div class="col-12 col-md-4">
+                      <div class="card proyect mt-5 mb-4">
+                              <img src="..." class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h3 class="card-title">Pan D'Monium</h3>
+                                <p class="card-text mt-3 mb-3">Web App que eficienta la toma de comandas y atención a los clientes en un restaurante Vegano.
+                                    Creado con React, HTM5, CSS, JS, reactstrap, PWA, Figma,  apoyado de Git/Github.
+                                    </p>
+                                <a href="http://Pamela-C-Torres-Gtz.github.io/MEX008-FE-Burger-Queen" class="btn btn-outline-secondary btn-lg mt-3 mb-2" target="blanck">Proyecto</a>
+                                <!--El atributo target="blanck" nos sirve para que nuestro enlace se abra en una pagina nueva-->
+                              </div>
+                      </div>
                     </div>
-                  </article>
-                </div>
+                
               </div>       
     </section>
     <!--******** /Portafolio**********-->
     
     <!--*******Contactame******-->
-    <section id="contactame" class="contactame container-fluid p-0">
+    <section id="contactame" class="contactame container-fluid p-0 mt-5 mb-5">
     <div class="d-flex flex-column text-center">
         <div>
           <h1>Contactame</h1>
         </div>
 
-        <div class="form container-fluid p-0">
+        <div class="form container-fluid p-0 mt-3">
          <div class="row">
            <div class="col col-md-8 offset-md-2">
               <form>
@@ -342,7 +342,7 @@
         
                   <div class="form-group row">
                     <div class="col-sm-10">
-                      <button type="submit" class="btn btn-outline-secondary btn-lg">Contactame</button>
+                      <button type="submit" class="btn btn-outline-secondary btn-lg mt-3">Contactame</button>
                     </div>
                   </div>
                 </form>
@@ -355,7 +355,7 @@
     <!--*******/Contactame******-->
 
     <!--Footer con bootstrap-->
-    <footer id="footer" class="pb-3 pt-3">
+    <footer id="footer" class="pb-3 pt-3 mt-4">
         <div class="container-fluid p-0">
       <div class="container">
         <div class="row text-center">
