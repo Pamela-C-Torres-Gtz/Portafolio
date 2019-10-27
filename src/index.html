@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
 
-  <body class="body container-fluid p-0">
-    <!--Header con bootstrap-->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark">
+  <body class="body container-fluid p-0" data-spy="scroll" data-target="#navbarSupportedContent" data-offset="74">
+    <!--Header**** la clase sticky-top sirve para que la barra de navegacion siempre sea visible-->
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="./img/logo_2.jpg" alt="Pamela logo" /> Pamela Torres</a>
@@ -30,9 +30,10 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!--Se utiliza este id="navbarnavbarSupportedContent" en el data-target para hacer que la barra aparezca en todo el sitio-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
@@ -267,7 +268,7 @@
     <section id="portafolio" class="portafolio container-fluid p-0 mt-5 mb-4">
         <div class="d-flex flex-column text-center">
             <div>
-              <h1>Projectos</h1>
+              <h1>Proyectos</h1>
             </div>
               <div class="row justify-content-md-center">
                 <div class="col-12 col-md-4">
@@ -322,23 +323,26 @@
         <div>
           <h1>Contactame</h1>
         </div>
-
         <div class="form container-fluid p-0 mt-3">
          <div class="row">
-           <div class="col col-md-8 offset-md-2">
-              <form>
-                  <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                    <div class="col-sm-10">
+           <div class="col col-md-9 offset-md-2 pt-2">
+              <form class="text-center">
+                <div class="form-group col-md-10">
+                  <label for="inputNombre3" class="text-center">Nombre</label>
+                    <input type="text" class="form-control" id="inputNombre3" placeholder="Nombre">
+                </div>
+                  <div class="form-group col-md-10">
+                    <label for="inputEmail3" class="text-center">Email</label>
                       <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                    </div>
                   </div>
-                  <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                    <div class="col-sm-10">
-                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                    </div>
+                  <div class="form-group col-md-10">
+                    <label for="inputSobjet3" class="text-center">Asunto</label>
+                      <input type="text" class="form-control" id="inputSobjet3" placeholder="Asunto">
                   </div>
+                  <div class="form-group col-md-10">
+                      <label for="inputTextArea3" class="text-center">Mensaje</label>
+                        <textarea type="text" class="form-control form-control-lg" id="inputTextArea3" placeholder="Mensaje"></textarea>
+                    </div>
         
                   <div class="form-group row">
                     <div class="col-sm-10">

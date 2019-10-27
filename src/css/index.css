@@ -21,11 +21,10 @@
 }
 
 .navbar{
-    /*background-color: #2f2f2f;*/
     background-color: #5d5e60;
     box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.993);
     border-radius: 3px;
-    height: 100%;
+    /*height: 100%;*/
     color:white;
 }
 
@@ -42,7 +41,7 @@
 }
 
 h1 {
-    font-size: 55px auto; 
+    font-size: 60px auto; 
     letter-spacing: 3px;
     text-shadow:black 0.1em 0.1em 0.2em;
 }
@@ -158,6 +157,12 @@ box-shadow: 6px 6px 5px 0px rgba(94,94,97,1);
     color: #dcdcdc;
 }
 
+.form .text-center{
+    font-size: 22px; 
+    letter-spacing: 3px;
+    text-shadow:black 0.1em 0.1em 0.2em;
+
+}
 #footer{
     background-color: #5d5e60;
     -webkit-box-shadow: 0px -8px 18px -3px rgba(217,217,224,1);
