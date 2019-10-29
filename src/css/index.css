@@ -6,6 +6,7 @@
 .body {
     /*background-color: #5d5e60;*/
     background-color: #2f2f2f;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .text-pamela {
@@ -99,6 +100,13 @@ h2 strong{
 
 .main h1{
     color: #dcdcdc;
+}
+
+.p {
+    margin-top: 1.5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 23px;
 }
 
 #main .carousel-inner img {
