@@ -1,4 +1,7 @@
 /*creando el evento del boton de contactame*/
+/*const axios = require("axios");
+
+AOS.init();*/
 
 document.getElementById("idBtnEnviar").addEventListener("click", function(){
     let strNombre= document.getElementById("inputNombre").value;
@@ -14,12 +17,15 @@ document.getElementById("idBtnEnviar").addEventListener("click", function(){
             asunto: strAsunto,
             mensaje: strMensaje,
         };
-        Promise.resolve(datos) 
+        /*SE instala npm i axios para realizar la conexion con el archivo de contacto */
+        axios.post('/api/contacto', datos)
+       /*Promise.resolve(datos) */
           .then(function(response){
               document.getElementById("inputNombre").value="";
               document.getElementById("inputEmail").value="";
               document.getElementById("inputSobjet").value="";
               document.getElementById("inputMensaje").value="";
+              alert('Gracias por escribirme, en breve te contactaré');
           }).catch(function(error){
               console.log(error);
           })
