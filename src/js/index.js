@@ -1,7 +1,7 @@
 /*creando el evento del boton de contactame*/
-/*const axios = require("axios");
+/*const axios = require("axios");*/
 
-AOS.init();*/
+/*AOS.init();*/
 
 document.getElementById("idBtnEnviar").addEventListener("click", function(){
     let strNombre= document.getElementById("inputNombre").value;
