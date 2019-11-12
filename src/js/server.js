@@ -1,7 +1,7 @@
-let express=requiere('express');
-let webpack= requiere('webpack');
+let express=require('express');
+let webpack= require('webpack');
 let webpackDevMiddleware= require('webpack-dev-middleware');
-let webpackConfig = requiere('./webpack.config');
+let webpackConfig = require('./webpack.config');
 /*para poder recibir correos con express*/
 let badyParser= require('body-parser');
 
@@ -22,7 +22,7 @@ const oEmail = new email({
    auth: {
        type:"login",
        user:"pamelatgtz@gmail.com",
-       pass:"programacion0323732";
+       pass:"programacion0323732",
    }
 
 });

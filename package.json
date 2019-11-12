@@ -1,0 +1,31 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Mi portafolio profesional",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "node": "^12.13.0",
+    "nodemailer": "^6.3.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.1"
+  },
+  "scripts": {
+    "test": "run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pamela-C-Torres-Gtz/Portafolio.git"
+  },
+  "keywords": [
+    "portafolio"
+  ],
+  "author": "Pamela Torres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pamela-C-Torres-Gtz/Portafolio/issues"
+  },
+  "homepage": "https://github.com/Pamela-C-Torres-Gtz/Portafolio#readme"
+}

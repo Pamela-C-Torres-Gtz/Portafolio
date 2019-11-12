@@ -1,7 +1,8 @@
-/*creando el evento del boton de contactame*/
-/*const axios = require("axios");*/
+/*creando el evento del boton de contactame
+//const axios = require("axios");
+import axios from 'axios';
 
-/*AOS.init();*/
+AOS.init();
 
 document.getElementById("idBtnEnviar").addEventListener("click", function(){
     let strNombre= document.getElementById("inputNombre").value;
@@ -9,7 +10,7 @@ document.getElementById("idBtnEnviar").addEventListener("click", function(){
     let strAsunto= document.getElementById("inputSobjet").value;
     let strMensaje= document.getElementById("inputMensaje").value;
 
-    /*verificar que no se encuentren vacios los inputs*/
+    /*verificar que no se encuentren vacios los inputs
     if(strNombre != "" && strCorreo != "" && strAsunto !="" && strMensaje !="") {
         let datos ={
             nombre: strNombre,
@@ -17,9 +18,9 @@ document.getElementById("idBtnEnviar").addEventListener("click", function(){
             asunto: strAsunto,
             mensaje: strMensaje,
         };
-        /*SE instala npm i axios para realizar la conexion con el archivo de contacto */
+        /*SE instala npm i axios para realizar la conexion con el archivo de contacto 
         axios.post('/api/contacto', datos)
-       /*Promise.resolve(datos) */
+       /*Promise.resolve(datos) 
           .then(function(response){
               document.getElementById("inputNombre").value="";
               document.getElementById("inputEmail").value="";
@@ -33,4 +34,9 @@ document.getElementById("idBtnEnviar").addEventListener("click", function(){
         alert("Porfavor revisa  todos los campos");
     }
 });
+*/
 
+$('#myTab a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
