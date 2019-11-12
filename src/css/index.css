@@ -116,29 +116,37 @@ h2 strong{
 
 .sobremi-image{
     border-radius: 70%;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 1rem;
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     align-content: center;
     justify-content: center;
     filter: drop-shadow(5px 5px 10px rgb(243, 240, 240));
 }
 
-.trayectoria {
- justify-content: space-between;
+#v-pills-tab {
+    margin-top: 45%;
 }
-
-.logo-laboratoria {
+.tab-content {
+    margin-top: 8%;
+}
+.logo {
     border-radius: 70%;
-    margin-top: 20px;
-    margin-right: 1rem;
-    width: 100px;
-    height: 100px;
-    align-content: center;
+    /*margin-left: 68%;*/
+    width: 150px;
+    height: 150px;
     justify-content: center;
     filter: drop-shadow(5px 5px 10px rgb(243, 240, 240));
 }
+
+.title {
+    margin-top: 5% auto;
+    align-items: center auto;
+    /*font-size: 20px auto;
+    /*text-align: center;*/
+}
+
 .main h1{
     color: #dcdcdc;
 }
