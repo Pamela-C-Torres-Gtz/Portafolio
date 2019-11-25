@@ -20,7 +20,7 @@
 }
 
 .text-pamela {
-    color: #31a8c4 !important;
+    color: #2311be !important;
 }
 
 #header {
@@ -61,6 +61,10 @@
     
 }
 
+.nav-link {
+    color: white;
+    font-size: 21px;
+}
 
 .home {
     height: 520px auto;
@@ -72,7 +76,7 @@
 
 h1 {
     margin-top: 4%;
-    font-size: 75px auto; 
+    font-size: 80px auto; 
     letter-spacing: 3px;
     text-shadow:black 0.1em 0.1em 0.2em;
     font-family: 'Aclonica', sans-serif;
@@ -162,6 +166,14 @@ h2 strong{
     align-items: center auto;
     /*font-size: 20px auto;
     /*text-align: center;*/
+}
+
+.titel-tab-pane {
+    margin-top: 4%;
+    font-size: 27px; 
+    letter-spacing: 3px;
+    text-shadow:black 0.1em 0.1em 0.2em;
+    font-family: 'Aclonica', sans-serif;
 }
 
 #v-pills-profile{
