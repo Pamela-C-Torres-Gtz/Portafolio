@@ -25,6 +25,8 @@
 
 #header {
     color: white;
+    background: rgb(120,95,212);
+background: linear-gradient(0deg, rgba(120,95,212,1) 5%, rgba(97,98,98,1) 100%);
     
 }
 #header img {
@@ -54,11 +56,13 @@
     font-family: 'Courgette', cursive;
     align-items: center;
     font-size: 140%;
+    text-shadow:black 0.1em 0.1em 0.2em;
+    color: #e3e2e2;
 }
 
 .nav-item {
     font-weight: bold;
-    
+    color: #e3e2e2;
 }
 
 .nav-link {
@@ -85,20 +89,16 @@ h1 {
 h2 {
     font-size: 15px auto; 
     line-height: 1.5; 
-    letter-spacing: -.2px;
-    background: rgb(191,193,197);
-    background: linear-gradient(356deg, rgba(191,193,197,1) 0%, rgba(255,255,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
     margin: 0;   
     font-family: 'Aclonica', sans-serif;
+    text-shadow:black 0.1em 0.1em 0.2em;
+   
 }
 
 h2 strong{ 
-    background: -webkit-linear-gradient(14deg, rgb(20, 22, 136) 3%, rgba(1,19,23,1) 81%);
-    background: linear-gradient(to top, #1e22e3 0%, #330867 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #2311be;
+    text-shadow:rgb(211, 209, 209) 0.1em 0.1em 0.2em;
 }
 
 .btn {
@@ -141,6 +141,13 @@ h2 strong{
 .nav-pills .nav-link, .nav-pills .nav-link.active {
     background-color: transparent;
     color: white;
+    letter-spacing: 1.5px;
+    text-shadow:black 0.1em 0.1em 0.2em;
+    font-family: 'Aclonica', sans-serif;
+}
+
+h4 {
+    text-shadow:black 0.1em 0.1em 0.2em;  
 }
 
 .nav-pills .nav-link a, .nav-pills .nav-link.active a {
@@ -271,11 +278,15 @@ box-shadow: 0px -8px 18px -3px rgba(217,217,224,1);
     /*box-shadow: 6px 0  8px 0 rgba(255, 254, 254, 0.993);*/
     border-radius: 3px;
     height: 35%;
+    background: rgb(120,95,212);
+background: linear-gradient(180deg, rgba(120,95,212,1) 5%, rgba(97,98,98,1) 100%);
+
 }
 
 #footer a,p {
     color:#e3e2e2;
     text-shadow:black 0.1em 0.1em 0.2em;
+    font-size: 20px;
 }
 
 
