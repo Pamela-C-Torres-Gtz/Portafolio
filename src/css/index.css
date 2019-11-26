@@ -70,6 +70,7 @@ background: linear-gradient(0deg, rgba(120,95,212,1) 5%, rgba(97,98,98,1) 100%);
     font-size: 21px;
 }
 
+
 .home {
     height: 520px auto;
     /*display: flex;*/
@@ -80,14 +81,14 @@ background: linear-gradient(0deg, rgba(120,95,212,1) 5%, rgba(97,98,98,1) 100%);
 
 h1 {
     margin-top: 4%;
-    font-size: 80px auto; 
+    font-size: 85px auto; 
     letter-spacing: 3px;
     text-shadow:black 0.1em 0.1em 0.2em;
     font-family: 'Aclonica', sans-serif;
 }
 
 h2 {
-    font-size: 15px auto; 
+    font-size: 22px auto; 
     line-height: 1.5; 
     letter-spacing: 2px;
     margin: 0;   
@@ -128,11 +129,11 @@ h2 strong{
     border-radius: 70%;
     margin-top: 10px;
     margin-right: 1rem;
-    width: 230px;
-    height: 230px;
+    width: 235px;
+    height: 235px;
     align-content: center;
     justify-content: center;
-    filter: drop-shadow(5px 5px 10px rgb(243, 240, 240));
+    filter: drop-shadow(10px 10px 16px rgb(0, 0, 0));
 }
 
 .nav {
@@ -156,16 +157,21 @@ h4 {
 #v-pills-tab {
     margin-top: 45%;
 }
+
+.trayectoria-a {
+    font-size: 18px;
+}
 .tab-content {
     margin-top: 8%;
 }
 .logo {
     border-radius: 70%;
     /*margin-left: 68%;*/
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     justify-content: center;
     filter: drop-shadow(5px 5px 10px rgb(243, 240, 240));
+    
 }
 
 .title {
