@@ -1,3 +1,6 @@
+/* Small devices (landscape phones, 320px and up) 
+@media (min-width: 320px) {...}
+
 /*Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
 
@@ -12,7 +15,7 @@
 
 
 .body {
-    background-image: url(../img/trianglify-lowres.png);
+    background-image: url(../img/trianglify-lowres2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -20,7 +23,7 @@
 }
 
 .text-pamela {
-    color: #2311be !important;
+    color: #2311be;
 }
 
 #header {
@@ -65,7 +68,7 @@ background: linear-gradient(0deg, rgba(120,95,212,1) 5%, rgba(97,98,98,1) 100%);
     color: #e3e2e2;
 }
 
-.nav-link {
+.navbar-light .navbar-nav .nav-link {
     color: white;
     font-size: 21px;
 }
@@ -91,7 +94,7 @@ h2 {
     font-size: 22px auto; 
     line-height: 1.5; 
     letter-spacing: 2px;
-    margin: 0;   
+    margin-top: 90px;   
     font-family: 'Aclonica', sans-serif;
     text-shadow:black 0.1em 0.1em 0.2em;
    
@@ -106,8 +109,8 @@ h2 strong{
     border-radius: 70%;
     margin-top: 10px;
     margin-right: 1rem;
-    width: 300px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
     align-content: center;
     justify-content: center;
     filter: drop-shadow(10px 10px 16px rgb(0, 0, 0));
@@ -140,8 +143,8 @@ h2 strong{
     border-radius: 70%;
     margin-top: 10px;
     margin-right: 1rem;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     align-content: center;
     justify-content: center;
     filter: drop-shadow(10px 10px 16px rgb(0, 0, 0));
@@ -163,7 +166,7 @@ h4 {
 }
 
 .nav-pills .nav-link a, .nav-pills .nav-link.active a {
-    color:white !important;
+    color:white;
 }
 #v-pills-tab {
     margin-top: 45%;
@@ -296,6 +299,19 @@ h4 {
      text-align: center;
     justify-content: center;
     color: #dcdcdc;
+}
+
+.fab {
+   color: white;
+   font-size: 30px;
+   margin-left: 2%;
+}
+
+.fa-node{
+    color: white;
+   font-size: 40px;
+   margin-right: 2%;
+   
 }
 
 .form .text-center{
