@@ -56,14 +56,19 @@
 
     <!--********** Home ***********--->
     <section id="home" class="home container-fluid text-center p-0 mt-5 mb-5">
-      <div class="d-flex flex-column">
+      <div class="d-flex flex-column mb-5">
         <h1>Bienvenid@</h1>
-      <div>
+        <div class="row container fluid mt-5 mb-5">
+      <div class="col-12 col-md-6">
         <h2 class="mt-5 mb-3">
           Hola! Soy<strong>&nbsp;Pamela Torres</strong> <br />
           FrontEnd<strong>&nbsp;Developer <br /> </strong> con pasión por<strong>&nbsp;aprender</strong>
         </h2>
       </div><br/>
+      <div class="col-12 col-md-4">
+         <img class="foto mt-4" src="src/img/pame_perfil.png" width="500" height="300" alt="imagen principal del sitio" />
+      </div>
+    </div>
       <div class="container-fluid text-center mt-5">
         <a class="link" href="/src/Pamela-Torres-CV.pdf" target="_blank">
           <button type="button" class="btn btn-outline-secondary btn-lg">
@@ -85,7 +90,8 @@
        <div class="d-flex flex-column text-center">
             <h1>Sobre Mi</h1>
             <div>
-           <img class="sobremi-image mt-4" src="src/img/pame_perfil.png" width="500" height="300" alt="imagen principal del sitio" />
+           
+           <img class="sobremi-image mt-4" src="src/img/dev_focus.svg" width="500" height="300" alt="developer" />
           </div>
           <div class="mt-4 mb-5">
             <p class="p">
@@ -101,7 +107,7 @@
       </div>
      
       <div class="row">
-          <div class="col-3">
+          <div class="col-3 container-fluid">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
               <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Trayectoria academica</a>
               <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Habilidades Técnicas</a>
@@ -114,7 +120,7 @@
               <div class="tab-pane fade show active active background-transparent" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                   <h1 class="titel-tab-pane">FRONT-END DEVELOPER</h1>
                 <div class="container-fluid">
-                    <div class="row justify-content-md-center">
+                    <div class="row justify-content-lg-center">
                         <div class="col-12 col-md-4 mb-3">
                           <img class="logo mt-4" src="src/img/laboratoria.png"  alt="logo laboratoria" />
                         </div>
@@ -145,11 +151,11 @@
                 </div>
               <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                 <div class="container-fluid"> 
-                    <h1 class="titel-tab-pane">Habilidades Técnicas</h1>
+                    <h1 class="titel-tab-pane text-center">Habilidades Técnicas</h1>
                     <div class="habilidades-tecnicas row">
-                        <div class="icon col-12">
+                        <div class="col-12 container-fluid">
                           <img class="icon" src="src/img/html5.svg" >
-                          <img class="icon" src="src/img/javascript.svg">
+                          <img class="icon" src="src/img/javascript-4.svg">
                           <img class="icon" src="src/img/css-5.svg" >
                           <img class="icon" src="src/img/git-icon.svg" >
                           <img class="icon" src="src/img/github-octocat.svg" >
@@ -158,7 +164,7 @@
                           <img class="icon" src="src/img/firebase-2.svg">
                         </div>
                         <div class="habilidades-tecnicas row">
-                          <div class="col-12 pl-2"> 
+                          <div class="col-12 pl-5 container-fluid"> 
                             <img class="icon" src="src/img/nodejs-1.svg">
                             <img class="icon" src="src/img/jest-0.svg">
                             <img class="icon" src="src/img/react.svg">
@@ -166,7 +172,7 @@
                             <img class="icon" src="src/img/figma-1.svg">
                             <img class="icon" src="src/img/marvel-5.svg">
                             <img class="icon" src="src/img/bootstrap.svg">
-                            <img class="icon" src="src/img/trello-plain-wordmark.svg">
+                            <img class="icon" src="src/img/trello.svg">
                           </div>
                        </div>
                   </div>
@@ -199,11 +205,11 @@
                 <div class="container-fluid">  
                   
                   <div class="habilidades-tecnicas row">
-                    <div class="icon col-12 ">
+                    <div class="col-12 ">
                       <img class="icon" src="src/img/camtasia.png" width="120" height="120">
                       <img class="icon" src="src/img/sql.jpg" width="120" height="120">
                       <img class="icon" src="src/img/teamviewer.jpg" width="120" height="120">
-                      <img class="icon" src="src/img/Photoshop.png" width="120" height="120">
+                      <img class="icon" src="src/img/adobe-photoshop-cs3.svg" width="120" height="120">
                       <img class="icon" src="src/img/mantenimiento.png" width="120" height="120">
                     </div>
                   </div>
@@ -223,14 +229,14 @@
               <div class="row justify-content-md-center">
                 <div class="col-12 col-md-4">
                   <div class="card proyect mt-5 mb-4">
-                          <img src="src/img/womendevs.png" class="card-img-top frontal" alt="WOMENDEVS">
+                          <img src="src/img/Women_Dev.jpg" class="card-img-top container-fluid" alt="WOMENDEVS">
                           <figcaption class="card-body trasera">
                             <h3 class="card-title">Women Dev</h3>
                             <p class="card-text mt-3 mb-3">Web App de  una red social para mujeres developers donde puedan comunicarse, compartir contenido, y ayudar a difundir conocimiento.
                                 <br /><br />Creado con HTML5, CSS y JavaScript Firebase apoyado de Figma y  Git/Github.
                                 </p>
                                 <a href="https://github.com/Pamela-C-Torres-Gtz/MEX008-social-network" class="btn btn-outline-secondary btn-lg mt-3 mb-2 mr-4" target="blanck">Código</a>
-                                <a href="https://pamela-c-torres-gtz.github.io/MEX008-social-network/src/index.html" class="btn btn-outline-secondary btn-lg mt-3 mb-2" target="blanck">Demo</a>
+                                <a href="https://pamela-c-torres-gtz.github.io/MEX008-social-network/src/index.html" class="btn btn-outline-secondary btn-lg mt-3 mb-2 mr-4" target="blanck">Demo</a>
                             
                             <!--El atributo target="blanck" nos sirve para que nuestro enlace se abra en una pagina nueva-->
                           </figcaption>
@@ -239,14 +245,14 @@
 
                 <div class="col-12 col-md-4">
                     <div class="card proyect mt-5 mb-4">
-                            <img src="src/img/md-link.png" class="card-img-top" alt="MD-link">
+                            <img src="src/img/md-link.png" class="card-img-top container-fluid" alt="MD-link">
                             <div class="card-body">
                               <h3 class="card-title">MD-Link</h3>
-                              <p class="card-text mt-3 mb-3">Herramienta creada en Node.js que lee y analiza archivos con extensión de formato (Markdown), que verifica los links contenidos y reporta estadísticas de validación. 
-                                  <br /><br />Creado con Node.JS, Tests Jets, ejecutable a travez de Interfaz de Línea de Comando,  apoyado de Git/Github.
+                              <p class="card-text mt-3 mb-3">Herramienta creada en Node.js que lee y analiza archivos con extensión de formato .md, que verifica los links contenidos y reporta estadísticas de validación. 
+                                  <br /><br />Creado con Node.JS, Tests Jets, ejecutable a travez Bash,  apoyado de Git/Github.
                                   </p>
                               <a href="https://github.com/Pamela-C-Torres-Gtz/MEX008-FE-md-link" class="btn btn-outline-secondary btn-lg mt-3 mb-2 mr-4" target="blanck">Código</a>
-                              <a href="https://github.com/Pamela-C-Torres-Gtz/MEX008-FE-md-link/blob/master/README.md" class="btn btn-outline-secondary btn-lg mt-3 mb-2" target="blanck">Demo</a>
+                              <a href="https://github.com/Pamela-C-Torres-Gtz/MEX008-FE-md-link/blob/master/README.md" class="btn btn-outline-secondary btn-lg mt-3 mb-2 mr-4" target="blanck">Demo</a>
                               
                               <!--El atributo target="blanck" nos sirve para que nuestro enlace se abra en una pagina nueva-->
                             </div>
@@ -255,14 +261,14 @@
 
                   <div class="col-12 col-md-4">
                       <div class="card proyect mt-5 mb-4">
-                              <img src="src/img/pandemonium.png" class="card-img-top" alt="Pandemonium">
+                              <img src="src/img/pandemonium.png" class="card-img-top container-fluid" alt="Pandemonium">
                               <div class="card-body">
                                 <h3 class="card-title">Pan D'Monium</h3>
                                 <p class="card-text mt-3 mb-3">Web App que eficienta la toma de comandas y atención a los clientes en un restaurante Vegano. esste proyecto se realizo de manera colaborativa
                                     <br /><br /> Creado con React, HTM5, CSS, JS, reactstrap, PWA, Figma,  apoyado de Git/Github.
                                     </p>
                                     <a href="https://github.com/Pamela-C-Torres-Gtz/MEX008-FE-Burger-Queen" class="btn btn-outline-secondary btn-lg mt-3 mb-2 mr-4" target="blanck">Código</a>
-                                   <a href="http://Pamela-C-Torres-Gtz.github.io/MEX008-FE-Burger-Queen" class="btn btn-outline-secondary btn-lg mt-3 mb-2" target="blanck">Demo</a>
+                                   <a href="http://Pamela-C-Torres-Gtz.github.io/MEX008-FE-Burger-Queen" class="btn btn-outline-secondary btn-lg mt-3 mb-2 mr-4" target="blanck">Demo</a>
                                 <!--El atributo target="blanck" nos sirve para que nuestro enlace se abra en una pagina nueva-->
                               </div>
                       </div>
